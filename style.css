@@ -1,0 +1,97 @@
+body {
+  /* background-color: bisque; */
+  background-image: url("./seoulhanok.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+top {
+  margin: 0;
+  padding: 0;
+}
+
+.oneLine {
+  /* background-image: url("./seoulhanok2.jpg"); */
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(150, 146, 146, 0.2);
+  margin: 0;
+}
+
+nav {
+  order: 2; /* 네비게이션을 세로 배치의 두 번째로 배치 */
+  margin-left: auto; /* 페이지 우측에 위치하도록 왼쪽 마진을 auto로 설정 */
+  padding: 10px;
+}
+
+h1 {
+  padding-left: 10px;
+  color: brown;
+}
+
+h3 {
+  padding: 5px;
+  padding-left: 10px;
+  margin-left: 0;
+}
+
+.title {
+  order: 1;
+  display: inline-block;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: brown;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.image-wrapper {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "a b c"
+    "d b e";
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1 {
+  grid-area: a;
+}
+
+.image2 {
+  grid-area: e;
+}
+
+.image3 {
+  grid-area: c;
+}
+
+.image4 {
+  grid-area: d;
+}
+
+.image5 {
+  grid-area: b;
+}
+
+footer {
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+  font-size: x-large;
+}
